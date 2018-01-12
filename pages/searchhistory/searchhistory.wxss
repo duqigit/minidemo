@@ -1,0 +1,92 @@
+/* pages/searchhistory/searchhistory.wxss */
+page{
+  background-color: #f3f3f3;
+}
+.header-bar{
+  width: 100%;
+  padding-left: 5%;
+  background-color: white;
+  padding-bottom: 5px;
+}
+.header-bar-left{
+  float: left;
+  width: 75%;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+}
+.search-icon{
+  float: left;
+  position: relative;
+  top: 4px;
+}
+.placeholder-text{
+  float: left;
+  font-size: 12px;
+  padding-left: 5px;
+  width: 90%;
+}
+.header-bar-right{
+  width: 16%;  
+  text-align: center;
+  font-size: 12px;
+  padding: 8px 0 8px 0;
+  color: #f4b43e;
+  float: left
+}
+.hot-list{
+  background-color: white;
+  margin-top: 3px;
+  padding:0% 5%;
+  font-size: 12px;
+}
+.hot-container{
+  width: 100%;
+  border-top: 1px solid #f3f3f3;
+  padding-bottom: 5px;
+}
+.hot-item{
+  display: inline-block;
+  border:1px solid #f3f3f3;
+  margin-top: 10px;
+  margin-right:2%;
+  padding: 5px 5px;
+  border-radius: 4px;
+}
+.hot-list-title{
+  display: block;
+  line-height: 30px;
+}
+.icon-fangzi{
+  margin-right: 2px;
+}
+.history-list{
+  background-color: white;
+  margin-top: 3px;
+  padding:0% 5%;
+  font-size: 12px;
+}
+.historyt-list-container{
+  display: block;
+  line-height: 30px;
+}
+.historyt-list-title{
+  /* float: left; */
+}
+.delete-icon{
+  float: right;
+}
+.history-container{
+  width: 100%;
+  display: block;
+  border-top: 1px solid #f3f3f3;
+  padding-bottom: 5px;
+}
+.history-item{
+  display: inline-block;
+  border:1px solid #f3f3f3;
+  margin-top: 10px;
+  margin-right:2%;
+  padding: 5px 5px;
+  border-radius: 4px; 
+}

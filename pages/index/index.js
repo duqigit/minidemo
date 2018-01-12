@@ -1,7 +1,16 @@
 //index.js
 //获取应用实例
-const app = getApp()
-
+const app = getApp();
+var bmap = require('../assets/js/bmap-wx.min.js'); 
+var wxMarkerData = []; 
+//获取当前位置
+wx.getLocation({
+  type:"gcj02",
+  altitude:false,
+  success:function(e){
+    console.log(e);
+  }
+})
 Page({
   data: {
     motto: 'Hello World',
@@ -15,6 +24,16 @@ Page({
       url: '../logs/logs'
     })
   },
+  toaddresspage:function(){
+    wx.navigateTo({
+      url: '../address/address'
+    })    
+  },
+  tohistory:function(){
+    wx.navigateTo({
+      url: '../searchhistory/searchhistory'
+    })        
+  },  
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -44,11 +63,10 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+    // app.globalData.userInfo = e.detail.userInfo
+    // this.setData({
+    //   userInfo: e.detail.userInfo,
+    //   hasUserInfo: true
+    // })
   }
 })

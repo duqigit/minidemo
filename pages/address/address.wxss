@@ -1,0 +1,62 @@
+/* pages/address/address.wxss */
+page{
+  background-color:#f4f4f4;
+}
+.search-container{
+  width: 100%;
+  display: block;
+  height: auto;
+  padding-left: 2%;
+  background-color: white;
+  padding-bottom: 5px;
+}
+.saerch-left{
+    background-color: #f0eff5;
+    width: 70%;
+    padding:5px 5px 5px 5px;
+    border-radius: 5px;
+    float: left
+}
+.search-icon{
+  float: left;
+  position: relative;
+  top: 1px;
+}
+.search-text{
+  width: 80%;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.config-btn{
+  float: left;
+   width: 15%; 
+}
+.config-btn-item{
+  display: block;
+  background-color: #aaa;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  position: relative;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 50%;
+  left: -25%;
+}
+.btn-gps{
+  background-color: #fff;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  margin-top:10px;
+  font-size: 14px;
+}
+.icon-gps{
+  position: relative;
+  color:#f5d66a;
+  top: 1px;
+  font-size: 18px;
+  margin-right: 4px;
+}

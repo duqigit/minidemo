@@ -1,8 +1,8 @@
 <!--index.wxml-->
 <view class="container">
   <block class="header-container">
-       <text class='header-left'><text class='gps-icon  iconfont icon-location'></text>联建小区(联建新村)<text class='iconfont icon-left'></text></text>
-      <text class='header-right'><text class='search-icon  iconfont icon-sousuo-copy'></text>蛋糕</text>   
+       <text class='header-left' bindtap="toaddresspage"><text class='gps-icon  iconfont icon-location'></text>联建小区(联建新村)<text class='iconfont icon-left'></text></text>
+      <text  bindtap="tohistory" class='header-right'><text class='search-icon  iconfont icon-sousuo-copy'></text>蛋糕</text>   
   </block>
   <view class='index-swiper-container'>
     <swiper class="index-swiper" indicator-dots="true" interval="5000" duration="1000">    

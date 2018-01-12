@@ -1,0 +1,39 @@
+<!--pages/searchhistory/searchhistory.wxml-->
+<view>
+    <view class='header-bar'>
+      <view class='header-bar-left'>
+         <text class='search-icon  iconfont icon-sousuo-copy'></text>
+         <input placeholder='炸鸡' class='placeholder-text'></input>
+      </view>
+      <view class='header-bar-right'>
+        <text>搜索</text>
+      </view>
+      <view class='clearup'></view>
+    </view>
+    <view class='hot-list'>
+      <text class='hot-list-title'>热门搜素</text>
+      <view class='hot-container'>
+        <text class='hot-item'><text class='iconfont icon-fangzi'></text>绝味鸭脖</text>
+        <text class='hot-item'><text class='iconfont icon-fangzi'></text>都爱小吃流浪蒸菜馆</text>
+        <text class='hot-item'><text class='iconfont icon-fangzi'></text>绝味鸭脖</text>
+        <text class='hot-item'><text class='iconfont icon-fangzi'></text>绝味鸭脖</text>
+        <text class='hot-item'><text class='iconfont icon-fangzi'></text>绝味鸭脖</text>
+        <text class='hot-item'><text class='iconfont icon-fangzi'></text>绝味鸭脖</text>
+      </view>
+    </view>
+    <view class='history-list'>
+      <view class='historyt-list-container'>
+          <text class='historyt-list-title'>历史搜索</text><text bindtap="deleteHistory" class='iconfont icon-105 delete-icon'></text>        
+      </view>
+      <view class='history-container'>
+        <text class='history-item'>绝味鸭脖</text>
+        <text class='history-item'>绝味鸭脖</text>
+        <text class='history-item'>绝味鸭脖</text>
+        <text class='history-item'>绝味鸭脖</text>
+        <text class='history-item'>绝味鸭脖</text>
+        <text class='history-item'>绝味鸭脖</text>
+        <text class='history-item'>绝味鸭脖</text>
+      </view>
+    </view>
+
+</view>

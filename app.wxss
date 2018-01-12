@@ -1,1 +1,4 @@
 @import "./pages/assets/css/stylesheet.wxss";
+.clearup{
+  clear: both;
+}

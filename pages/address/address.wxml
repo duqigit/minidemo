@@ -1,0 +1,14 @@
+<!--pages/address/address.wxml-->
+<view>
+  <view class='search-container'>
+    <view class='saerch-left'>
+      <text class='search-icon  iconfont icon-sousuo-copy'></text><input class='search-text' placeholder='请输入收货地址'></input>
+    </view>
+     <view class='config-btn'>
+       <text class='config-btn-item'>搜索</text> 
+     </view>
+     <view class='clearup'></view>
+  </view>
+  <text class='btn-gps'><text class='iconfont icon-icon-test icon-gps'></text>点击定位当前位置</text>
+    
+</view>
