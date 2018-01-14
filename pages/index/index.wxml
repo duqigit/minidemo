@@ -2,7 +2,8 @@
 <view class="container">
   <block class="header-container">
        <text class='header-left' bindtap="toaddresspage"><text class='gps-icon  iconfont icon-location'></text>联建小区(联建新村)<text class='iconfont icon-left'></text></text>
-      <text  bindtap="tohistory" class='header-right'><text class='search-icon  iconfont icon-sousuo-copy'></text>蛋糕</text>   
+      <text  bindtap="tohistory" class='header-right'><text class='search-icon  iconfont icon-sousuo-copy'></text>蛋糕</text>
+      <view class='clearup'></view>   
   </block>
   <view class='index-swiper-container'>
     <swiper class="index-swiper" indicator-dots="true" interval="5000" duration="1000">    
@@ -80,4 +81,10 @@
         </swiper-item>    
     </swiper>     
   </view>
+    <view class='shop-order'>
+      <text class='shop-order-item'>综合排序<text class="iconfont icon-xiangxia"></text></text>
+      <text class='shop-order-item'>销量最高</text>
+      <text class='shop-order-item'>距离最近</text>
+      <text class='shop-order-item'>筛选<text class="iconfont icon-shaixuan"></text></text>
+    </view>  
 </view>

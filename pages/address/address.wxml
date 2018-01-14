@@ -2,7 +2,7 @@
 <view>
   <view class='search-container'>
     <view class='saerch-left'>
-      <text class='search-icon  iconfont icon-sousuo-copy'></text><input class='search-text' placeholder='请输入收货地址'></input>
+      <text class='search-icon  iconfont icon-sousuo-copy'></text><input class='search-text' auto-focus="true" placeholder='请输入收货地址'></input>
     </view>
      <view class='config-btn'>
        <text class='config-btn-item'>搜索</text> 
