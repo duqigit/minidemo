@@ -2,3 +2,6 @@
 .clearup{
   clear: both;
 }
+page{
+  position: fixed;
+}

@@ -1,7 +1,13 @@
+
+page{
+  background-color: #f3f3f3;
+}
 .header-container{
   width: 100%;
   height: auto;
   padding-top: 5px;
+  background-color: white;
+  padding-bottom: 20px;
 }
 .header-left{
   float: left;
@@ -39,14 +45,14 @@
   font-size: 12px;
 }
 .index-swiper{
-  height: 160px; 
+  height: 200px;
 }
 .swper-slider{
   width:100%;
 }
 .index-swiper-container{
   position: relative;
-  top: 20px;
+  background-color: white;   
 }
 .swiper-item{
   width: 25%;
@@ -115,12 +121,28 @@
 .swiper-content-text{
   margin-top: 5px;
 }
-.map_container{ 
-    height: 300px; 
-    width: 100%; 
-} 
-
-.map { 
-    height: 100%; 
-    width: 100%; 
+.title-top {
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+  margin-top: 5px;
+  line-height: 50px;
+}
+.title-index{
+  display: block;
+  position: relative;   /*定位横线（当横线的父元素）*/
+}
+.title-index:before, .title-index:after {
+  content: '';
+  position: absolute;
+  top: 52%;
+  background: #4b4b4b;
+  width: 9%;
+  height: 2px;
+}
+.title-index:before{
+  left: 30%;
+}
+.title-index:after {
+  right: 30%;
 }

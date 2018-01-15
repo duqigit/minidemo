@@ -1,83 +1,90 @@
 <!--index.wxml-->
 <view class="container">
-  <block class="header-container">
+  <view class="header-container">
        <text class='header-left' bindtap="toaddresspage"><text class='gps-icon  iconfont icon-location'></text>联建小区(联建新村)<text class='iconfont icon-left'></text></text>
       <text  bindtap="tohistory" class='header-right'><text class='search-icon  iconfont icon-sousuo-copy'></text>蛋糕</text>   
-  </block>
+      <view class='clearup'></view>
+  </view>
   <view class='index-swiper-container'>
-    <swiper class="index-swiper" indicator-dots="true" interval="5000" duration="1000">    
+    <swiper class="index-swiper" interval="5000" duration="1000">    
         <swiper-item class="swper-slider">
-        <view>
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont1 icon-meishi'></text></view>
-                <view class='swiper-content-text'><text>美食</text></view>
-            </view>   
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont2 icon-chaoshi'></text></view>
-                <view class='swiper-content-text'><text>美团超市</text></view>
-            </view>
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont3 icon-shengxianguoshu'></text></view>
-                <view class='swiper-content-text'><text>生鲜果蔬</text></view>
-            </view>
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont4 icon-xiawucha'></text></view>
-                <view class='swiper-content-text'><text>下午茶</text></view>
-            </view>   
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont5 icon-fuwuwaimai'></text></view>
-                <view class='swiper-content-text'><text>美团专送</text></view>
-            </view>  
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont6 icon-youxuan'></text></view>
-                <view class='swiper-content-text'><text>正餐优选</text></view>
-            </view>   
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont7 icon-zhengcan'></text></view>
-                <view class='swiper-content-text'><text>快餐小吃</text></view>
-            </view>
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont8 icon-leimupinleifenleileibie'></text></view>
-                <view class='swiper-content-text'><text>全部商家</text></view>
-            </view>
-        </view>
+          <view>
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont1 icon-meishi'></text></view>
+                  <view class='swiper-content-text'><text>美食</text></view>
+              </view>   
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont2 icon-chaoshi'></text></view>
+                  <view class='swiper-content-text'><text>美团超市</text></view>
+              </view>
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont3 icon-shengxianguoshu'></text></view>
+                  <view class='swiper-content-text'><text>生鲜果蔬</text></view>
+              </view>
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont4 icon-xiawucha'></text></view>
+                  <view class='swiper-content-text'><text>下午茶</text></view>
+              </view>   
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont5 icon-fuwuwaimai'></text></view>
+                  <view class='swiper-content-text'><text>美团专送</text></view>
+              </view>  
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont6 icon-youxuan'></text></view>
+                  <view class='swiper-content-text'><text>正餐优选</text></view>
+              </view>   
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont7 icon-zhengcan'></text></view>
+                  <view class='swiper-content-text'><text>快餐小吃</text></view>
+              </view>
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont8 icon-leimupinleifenleileibie'></text></view>
+                  <view class='swiper-content-text'><text>全部商家</text></view>
+              </view>
+          </view>
         </swiper-item>  
         <swiper-item class="swper-slider">    
-         <view>
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont9 icon-hanbao'></text></view>
-                <view class='swiper-content-text'><text>汉堡披萨</text></view>
-            </view>   
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont10 icon-shu'></text></view>
-                <view class='swiper-content-text'><text>地方菜</text></view>
-            </view>
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont11 icon-mianfei'></text></view>
-                <view class='swiper-content-text'><text>免配送费</text></view>
-            </view>
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont12 icon-xin'></text></view>
-                <view class='swiper-content-text'><text>新商家</text></view>
-            </view>   
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont13 icon-jitui'></text></view>
-                <view class='swiper-content-text'><text>炸鸡零食</text></view>
-            </view>  
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont14 icon-youxuan'></text></view>
-                <view class='swiper-content-text'><text>日本料理</text></view>
-            </view>   
-            <view class='swiper-item'>
-                <view><text class='iconfont iconfont15 icon-xianhua'></text></view>
-                <view class='swiper-content-text'><text>鲜花蛋糕</text></view>
-            </view>
-            <view class='swiper-item'>
-                <view class='swiper-content-text'><text class='iconfont iconfont16 icon-yaopinhaocai'></text></view>
-                <view><text>送药上门</text></view>
-            </view>
-        </view>     
+          <view>
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont9 icon-hanbao'></text></view>
+                  <view class='swiper-content-text'><text>汉堡披萨</text></view>
+              </view>   
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont10 icon-shu'></text></view>
+                  <view class='swiper-content-text'><text>地方菜</text></view>
+              </view>
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont11 icon-mianfei'></text></view>
+                  <view class='swiper-content-text'><text>免配送费</text></view>
+              </view>
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont12 icon-xin'></text></view>
+                  <view class='swiper-content-text'><text>新商家</text></view>
+              </view>   
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont13 icon-jitui'></text></view>
+                  <view class='swiper-content-text'><text>炸鸡零食</text></view>
+              </view>  
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont14 icon-youxuan'></text></view>
+                  <view class='swiper-content-text'><text>日本料理</text></view>
+              </view>   
+              <view class='swiper-item'>
+                  <view><text class='iconfont iconfont15 icon-xianhua'></text></view>
+                  <view class='swiper-content-text'><text>鲜花蛋糕</text></view>
+              </view>
+              <view class='swiper-item'>
+                  <view class='swiper-content-text'><text class='iconfont iconfont16 icon-yaopinhaocai'></text></view>
+                  <view><text>送药上门</text></view>
+              </view>
+          </view>     
         </swiper-item>    
     </swiper>     
+  </view>
+  <view class='clearup'></view>
+  <!--baner下面的东西  -->
+  <view class='title-top'>
+      <text class='title-index'>热门商家</text>
+     <!-- <h3 class="title"><span>Snapshot</span></h3> -->
   </view>
 </view>
