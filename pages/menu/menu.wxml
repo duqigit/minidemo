@@ -1,0 +1,13 @@
+<template name="loginPannel">
+    <view class="container-menu">
+        <view class="container-menu-item">
+            首页
+        </view>
+        <view class="container-menu-item">
+          订单
+        </view>
+        <view class="container-menu-item">
+          我的
+        </view>
+    </view>
+</template>

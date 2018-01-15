@@ -1,0 +1,12 @@
+/* pages/menu/menu.wxss */
+.container-menu{
+	width:100%;
+	display:flex;
+	text-align: center;
+	font-size: 24rpx;
+	position: fixed;
+	bottom: 0;
+}
+.container-menu-item{
+	flex: 1;
+}

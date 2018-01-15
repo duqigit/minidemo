@@ -1,4 +1,6 @@
 <!--index.wxml-->
+<import src="../menu/menu.wxml"/>
+<template is="loginPannel"/>
 <view class="container">
     <view class="header-container">
          <text class='header-left' bindtap="toaddresspage"><text class='gps-icon  iconfont icon-location'></text>联建小区(联建新村)<text class='iconfont icon-left'></text></text>
