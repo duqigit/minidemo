@@ -292,8 +292,7 @@ page{
 }
 .active-store{
   position: absolute;
-  top: 0;
-  z-index: 9999;
+  z-index: 1000;
   top: 2rpx;
   font-size: 20rpx;
   background-color: #FFA627;

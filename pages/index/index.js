@@ -68,5 +68,11 @@ Page({
     //   userInfo: e.detail.userInfo,
     //   hasUserInfo: true
     // })
+  },
+  toOrder:function(){
+    console.log(111111);
+    wx.redirectTo({
+      url: '../order/order'
+    })    
   }
 })

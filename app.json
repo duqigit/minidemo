@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/address/address",
     "pages/searchhistory/searchhistory",
-    "pages/menu/menu"    
+    "pages/menu/menu",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "light",

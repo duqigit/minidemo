@@ -1,13 +1,19 @@
-<template name="loginPannel">
+ <template name="loginPannel"> 
     <view class="container-menu">
-        <view class="container-menu-item">
-            首页
+        <view class="container-menu-item container-menu-itemA">
+            <view class='btn-home btn-firstA'>            
+            </view>
+            <text class='container-title'>首页</text>
         </view>
-        <view class="container-menu-item">
-          订单
+        <view class="container-menu-item"  bindtap="toOrder">
+            <view class='btn-home btn-secondA'>
+            </view>
+             <text class='container-title'>订单</text>        
         </view>
-        <view class="container-menu-item">
-          我的
+        <view class="container-menu-item"  bindtap="toPerson">
+            <view class='btn-home btn-thirdA' >
+            </view>
+             <text class='container-title'>我的</text>
         </view>
     </view>
-</template>
+ </template> 
