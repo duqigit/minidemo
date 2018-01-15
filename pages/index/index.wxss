@@ -1,4 +1,3 @@
-
 page{
   background-color: #f3f3f3;
 }
@@ -15,7 +14,7 @@ page{
   color: white;
   border-radius: 20px;
   font-size: 14px;
-   line-height: 20px; 
+   line-height: 20px;
   padding: 5px 10px;
   width: 35%;
   overflow: hidden;
@@ -40,7 +39,7 @@ page{
 }
 .icon-left{
   position: absolute;
-  top:6px; 
+  top:6px;
   right:5px;
   font-size: 12px;
 }
@@ -52,7 +51,7 @@ page{
 }
 .index-swiper-container{
   position: relative;
-  background-color: white;   
+  background-color: white;
 }
 .swiper-item{
   width: 25%;
@@ -68,7 +67,7 @@ page{
   font-size: 24px;
   line-height: 50px;
   border-radius: 50px;
-  color: white;  
+  color: white;
 }
 .swiper-item .iconfont1{
   background-color: #e97874;
@@ -125,12 +124,12 @@ page{
   text-align: center;
   font-size: 14px;
   background-color: white;
-  margin-top: 5px;
-  line-height: 50px;
+  margin-top: 10px;
+  line-height: 40px;
 }
 .title-index{
   display: block;
-  position: relative;   /*定位横线（当横线的父元素）*/
+  position: relative;
 }
 .title-index:before, .title-index:after {
   content: '';
@@ -145,4 +144,167 @@ page{
 }
 .title-index:after {
   right: 30%;
+}
+.shop-order{
+  font-size: 12px;
+  display: block;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  background-color: white;
+}
+.shop-order-item{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+.shop-order .iconfont{
+  font-size: 12px;
+  margin-right: 2px;
+}
+.store-container{
+  background-color: white;
+}
+.store-item{
+  position: relative;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #e8e8e8;
+  margin-left: 12rpx;
+  padding-bottom: 24rpx;
+  padding-top: 24rpx;
+}
+.store-item-left{
+  /*float: left;*/
+  width: 180rpx;
+  height: 150rpx;
+  position: absolute;
+  border: 1px solid #E4E4E4;
+}
+.store-item-right{
+  display: block;
+  margin-left: 200rpx;
+}
+.store-item-imgae{
+  width: 100%;
+  height: 100%;
+}
+.store-name{
+  font-size:30rpx;
+  font-weight: bold;
+}
+.store-info{
+  font-size:24rpx;
+  margin-top: 10rpx;
+}
+.icon-xingxing{
+  color: #f8d27b;
+  font-size: 24rpx;
+}
+.store-distance{
+  float: right;
+  font-size:24rpx;
+  margin-right: 12rpx;
+}
+.store-line{
+  font-size:20rpx;
+  float: right;
+  margin-right: 10rpx;
+}
+.store-time{
+  font-size:20rpx;
+  float: right;
+  margin-right: 20rpx;
+}
+.store-money{
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+.store-money-item{
+  margin-right: 24rpx;
+  color: #666;
+}
+.store-allocation{
+    position: relative;
+    background-color: #FFD161;
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+    padding: 0 6px;
+    font-size: 10px;
+    color: #333;
+    font-weight: normal;
+    vertical-align: baseline;
+    display: inline-block;
+    margin-right: 12rpx;
+    float: right;
+}
+.store-allocation:before{
+    left: 0;
+    top: 0;
+    border-color: #fff #FFD161 #FFD161 #fff;
+}
+.store-allocation:after{
+    right: 0;
+    bottom: 0;
+    border-color: #FFD161 #fff #fff #FFD161;
+}
+.store-allocation:after,.store-allocation:before{
+    content: '';
+    position: absolute;
+    border: 2px solid #fff;
+    width: 0;
+    height: 0;
+    font-size:0;
+}
+.store-work{
+  font-size: 24rpx;
+  color: #999;
+}
+.store-jian{
+  display: inline-block;
+  background-color: #eb6e65;
+  color: white;
+  padding: 1rpx 8rpx;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+  border-radius: 1rpx;
+  font-size: 20rpx;
+}
+.store-shou{
+  display: inline-block;
+  background-color: #f2aa4d;
+  color: white;
+  padding: 1rpx 8rpx;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+  border-radius: 1rpx;
+  font-size: 20rpx;
+}
+.store-zhe{
+  display: inline-block;
+  background-color: #b784e1;
+  color: white;
+  padding: 1rpx 8rpx;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+  border-radius: 1rpx;
+  font-size: 20rpx;
+}
+.active-store{
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  top: 2rpx;
+  font-size: 20rpx;
+  background-color: #FFA627;
+  color: white;
+  padding: 2rpx 4rpx 2rpx 4rpx;
+  border-radius: 6rpx;
+}
+.slide-icon{
+  float: right;
+  font-size: 18rpx;
+  margin-right: 16rpx;
+  position: relative;
+  top: 12rpx;
 }
