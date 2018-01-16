@@ -1,14 +1,14 @@
 //index.js
 //获取应用实例
 const app = getApp();
-var bmap = require('../assets/js/bmap-wx.min.js'); 
-var wxMarkerData = []; 
+var bmap = require('../assets/js/bmap-wx.min.js');
+var wxMarkerData = [];
 //获取当前位置
 wx.getLocation({
   type:"gcj02",
   altitude:false,
   success:function(e){
-    console.log(e);
+    // console.log(e);
   }
 })
 Page({
@@ -27,13 +27,13 @@ Page({
   toaddresspage:function(){
     wx.navigateTo({
       url: '../address/address'
-    })    
+    })
   },
   tohistory:function(){
     wx.navigateTo({
       url: '../searchhistory/searchhistory'
-    })        
-  },  
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -70,9 +70,13 @@ Page({
     // })
   },
   toOrder:function(){
-    console.log(111111);
     wx.redirectTo({
       url: '../order/order'
-    })    
+    })
+  },
+  toPerson:function(){
+    wx.redirectTo({
+      url: '../person/person'
+    })
   }
 })

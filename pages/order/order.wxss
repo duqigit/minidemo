@@ -1,1 +1,10 @@
 /* pages/order/order.wxss */
+.btn-firstA{
+  background-position: 0px -75px;
+}
+.btn-secondA{
+  background-position: 0px 0px;
+}
+.btn-thirdA{
+  background-position: 0px -125px;
+}

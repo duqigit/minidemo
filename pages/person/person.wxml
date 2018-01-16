@@ -1,5 +1,5 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<!--pages/person/person.wxml-->
+<text>pages/person/person.wxml</text>
 <view class="container-menu">
     <view class="container-menu-item container-menu-itemA">
        <navigator url="../index/index" open-type="redirect" hover-class="none">

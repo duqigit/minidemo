@@ -1,6 +1,24 @@
 <!--index.wxml-->
-<import src="../menu/menu.wxml"/>
-<template is="loginPannel"/>
+<view class="container-menu">
+    <view class="container-menu-item container-menu-itemA">
+       <navigator url="../index/index" open-type="redirect" hover-class="none">
+        <view class='btn-home btn-firstA'></view>
+        <text class='container-title'>首页</text>
+      </navigator>
+    </view>
+    <view class="container-menu-item" >
+        <navigator url="../order/order" open-type="redirect" hover-class="none">
+             <view class='btn-home btn-secondA'></view>
+             <text class='container-title'>订单</text>
+        </navigator>
+    </view>
+    <view class="container-menu-item">
+        <navigator  url="../person/person" open-type="redirect" hover-class="none">
+          <view class='btn-home btn-thirdA'></view>
+          <text class='container-title'>我的</text>
+        </navigator>
+    </view>
+</view>
 <view class="container">
     <view class="header-container">
          <text class='header-left' bindtap="toaddresspage"><text class='gps-icon  iconfont icon-location'></text>联建小区(联建新村)<text class='iconfont icon-left'></text></text>

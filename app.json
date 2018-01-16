@@ -1,16 +1,18 @@
 {
   "pages": [
+    "pages/store/store",
     "pages/index/index",
     "pages/logs/logs",
     "pages/address/address",
     "pages/searchhistory/searchhistory",
     "pages/menu/menu",
-    "pages/order/order"
+    "pages/order/order",
+    "pages/person/person"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "美团外卖+",
     "navigationBarTextStyle": "black"
   }
 }

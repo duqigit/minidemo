@@ -1,0 +1,10 @@
+/* pages/person/person.wxss */
+.btn-firstA{
+  background-position: 0px -75px;
+}
+.btn-secondA{
+  background-position: 0px -25px;
+}
+.btn-thirdA{
+  background-position: 0px -100px;
+}
