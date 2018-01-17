@@ -1,0 +1,158 @@
+<!--pages/store/store.wxml-->
+<view class="container-store">
+		<view class="container-store-fixed">
+			<view class="header-store" id="header-store">
+				<view class="header-store-slide">
+					<view class="header-store-left">
+						<image src='../assets/images/top2.jpg' class="image-store"></image>
+					</view>
+					<view class="header-store-right">
+						<view class="header-store-title">起送¥30 | 起送¥30 | 40分钟</view>
+						<view class="header-store-derc"><text class="iconfont icon-laba001 icon-gonggao"></text>欢迎光临，很高兴为你服务!</view>
+					</view>
+				</view>
+				<view class="store-influence">
+					<view class="store-influence-icon-left" animation="{{animationData}}">
+						<text class="store-influence-item-left" wx:for="{{order}}" wx:for-item="j">
+							<text class="store-influence-A">{{j.title}}</text>{{j.describe}}
+						</text>
+					</view>
+					<text class="store-influence-right">3个活动<text class="iconfont icon-left store-influence-icon"></text>
+					</text>
+					<view class="clearup"></view>
+				</view>
+			</view>
+			<view class="headerbar" id="headerbar">
+				<view class="headerbar-item on">点菜</view>
+				<view class="headerbar-item">评价</view>
+				<view class="headerbar-item">商家</view>
+			</view>
+		</view>
+        <swiper class="store-swiper" style="height:{{Endheight}};top:{{Endheighttop}};"  interval="5000" duration="1000">
+            <swiper-item style="height:{{Endheight}};width: 100%;">
+<!-- 	            	<view  class="scroll-view-containerA-left" style="height:{{Endheight}};">
+			            	<scroll-view  style="width:200rpx;height:{{Endheight}}" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container">
+				            		<view class="scroll-view-containerA-item scroll-view-containerA-item-on">
+				            			<view class="scroll-view-containerA-item-content">
+											<text class="iconfont icon-remen"></text>热销
+				            			</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			<text class="iconfont icon-zhekou"></text>折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            		<view class="scroll-view-containerA-item">
+				            			<view class="scroll-view-containerA-item-content">
+				    	        			折扣
+					            		</view>
+				            		</view>
+				            </scroll-view>
+	            	</view> -->
+					<scroll-view class="store-swiper-right" style="height:{{Endheight}};position: fixed;" scroll-y="true" >
+						<!-- <view style="height:{{Endheight}};" class="store-swiper-right-content"> -->
+							圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是
+						<!-- </view> -->
+		            </scroll-view>
+            </swiper-item>
+<!--             <swiper-item class="swper-slider">
+            	<scroll-view  style="width: 100%;height:{{Endheight}}" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container" >
+            	我是评价页面我是评价页面我是评价页面我是评价页面我是评价页面我是评价页面我是评价页面
+	            </scroll-view>
+            </swiper-item>
+            <swiper-item class="swper-slider">
+            	<scroll-view  style="width: 100%;height:{{Endheight}}" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container" >
+
+	            </scroll-view>
+            </swiper-item> -->
+        </swiper>
+
+</view>
+<!-- </scroll-view> -->
+<!-- <view class="container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+</view>

@@ -1,0 +1,142 @@
+/* pages/store/store.wxss */
+.header-store{
+	display: block;
+	position: relative;
+	background-color: #333;
+	color: white;
+	padding: 10rpx 20rpx 0rpx 20rpx;
+}
+.container-store-fixed{
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+.header-store-slide{
+	padding-bottom:30rpx;
+	border-bottom: 1px solid #a5a5a5;
+}
+.header-store-left{
+	width: 80rpx;
+	height: 80rpx;
+	display: block;
+	position: absolute;
+}
+.image-store{
+	width: 100%;
+	height: 100%;
+}
+.header-store-right{
+	font-size: 24rpx;
+	margin-left:80rpx;
+	display: block;
+	padding-left: 24rpx;
+}
+.header-store-title{
+	margin-top: 8rpx;
+	display: block;
+}
+.header-store-derc{
+	margin-top: 8rpx;
+	display: block;
+}
+.icon-gonggao{
+	position: relative;
+	top: 2rpx;
+	margin-right:6rpx;
+}
+.store-influence{
+	font-size: 24rpx;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+}
+.store-influence-icon-left{
+	float: left;
+	display: block;
+	height: 40px;
+}
+.store-influence-item-left{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+}
+.store-influence-right{
+	float: right;
+	display: inline-block;
+}
+.store-influence-icon{
+	font-size: 20rpx;
+	margin-left: 5rpx;
+}
+.store-influence-A{
+	padding: 0rpx 8rpx 0rpx 8rpx;
+	background-color: #ed6d62;
+	margin-right: 8rpx;
+	font-size: 20rpx;
+}
+.headerbar{
+	width: 100%;
+	display: flex;
+	font-size: 28rpx;
+	text-align: center;
+	line-height: 80rpx;
+	border-bottom: 1px solid #ccc;
+	color: #7a7a7a;
+	letter-spacing: 2rpx;
+	width: 100%;
+	background-color: white;
+}
+.headerbar-item{
+	flex: 1;
+}
+.headerbar .on{
+	color: #fbd373;
+}
+.container{
+	width: 200px;
+	height: 200px;
+	background-color: pink
+}
+.scroll-view-container{
+	display: block;
+	/*position: relative;*/
+}
+.scroll-view-containerA-left{
+	display: block;
+	font-size: 24rpx;
+	position: absolute;
+	z-index: 1001;
+	width:200rpx;
+}
+.scroll-view-containerA-item{
+	text-align: center;
+	padding: 0 20rpx 0 20rpx;
+	display: block;
+	background-color: #f4f4f4;
+}
+.scroll-view-containerA-item-content{
+	display: block;
+	border-bottom: 1px dashed #e5e5e5;
+	padding-bottom: 30rpx;
+	padding-top: 30rpx;
+}
+.scroll-view-containerA-item .iconfont{
+	margin-right: 5rpx;
+}
+.scroll-view-containerA-item-on{
+	background-color: #fff;
+	border-bottom: none;
+}
+.store-swiper{
+	width:100%;
+	position: absolute;
+	z-index: 9999
+}
+.store-swiper-right{
+
+}
+.store-swiper-right-content{
+	display: block;
+	padding-left: 200rpx;
+}
