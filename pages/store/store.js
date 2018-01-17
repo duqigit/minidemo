@@ -11,18 +11,18 @@ Page({
      firstheight:'',
      secondHeight:'',
      Endheighttop:'',
-     sum:120,
+     windowWidth:'',
      order:[
       {
         title:"减",
         describe:'满50减20;满120减40'
       },
       {
-        title:"减",
+        title:"首",
         describe:'满50减20;满120减40'
       },
       {
-        title:"减",
+        title:"折",
         describe:'满50减20;满120减40'
       }],
       ordercp:[
@@ -31,11 +31,11 @@ Page({
         describe:'满50减20;满120减40'
       },
       {
-        title:"减",
+        title:"首",
         describe:'满50减20;满120减40'
       },
       {
-        title:"减",
+        title:"折",
         describe:'满50减20;满120减40'
       }]
   },
@@ -54,9 +54,11 @@ Page({
         Promise.all([p1, p2]).then(values => {
             wx.getSystemInfo({
                 success: function (res) {
+                  console.log(res.windowWidth)
                   that.setData({
                     Endheight:(res.windowHeight - that.data.firstheight - that.data.secondHeight)+"px",
-                    Endheighttop:(that.data.firstheight + that.data.secondHeight)+"px"
+                    Endheighttop:(that.data.firstheight + that.data.secondHeight-3.5)+"px",
+                    windowWidth:(res.windowWidth-100)+"px"
                   })
                 }
             })
@@ -73,22 +75,22 @@ Page({
    */
   onShow: function () {
     var animation = wx.createAnimation({
-        duration: 1000,
-        timingFunction: 'ease'
+        duration: 2000,
+        timingFunction: 'ease',
+
     });
     var sum=0;
     setInterval(function() {
         sum+=40;
+        console.log(sum)
         animation.translateY(-sum).step();
-        if(sum==120){
           this.setData({
             order:this.data.order.concat(this.data.ordercp)
           });
-        }
         this.setData({
           animationData:animation.export()
         })
-    }.bind(this), 1000)
+    }.bind(this), 5000)
 
   },
 
