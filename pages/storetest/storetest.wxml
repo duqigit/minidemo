@@ -1,6 +1,9 @@
 <!--pages/store/store.wxml-->
-<view class="container-store">
-		<view class="container-store-fixed">
+<view class="container-store" style="height: {{height}};width:{{width}};position: absolute;" >
+	<scroll-view  style="width: 100%;height: 100px;background-color: pink;position: absolute;" disable-scroll="true">
+		顶部
+	</scroll-view>
+<!-- 		<view class="container-store-fixed">
 			<view class="header-store" id="header-store">
 				<view class="header-store-slide">
 					<view class="header-store-left">
@@ -27,130 +30,22 @@
 				<view class="headerbar-item">评价</view>
 				<view class="headerbar-item">商家</view>
 			</view>
-		</view>
-        <swiper class="store-swiper" style="height:{{Endheight}};top:{{Endheighttop}};"  interval="5000" duration="1000">
-            <swiper-item style="height:{{Endheight}};width: 100%;">
-<!-- 	            	<view  class="scroll-view-containerA-left" style="height:{{Endheight}};">
-			            	<scroll-view  style="width:200rpx;height:{{Endheight}}" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container">
-				            		<view class="scroll-view-containerA-item scroll-view-containerA-item-on">
-				            			<view class="scroll-view-containerA-item-content">
-											<text class="iconfont icon-remen"></text>热销
-				            			</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			<text class="iconfont icon-zhekou"></text>折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            </scroll-view>
-	            	</view> -->
-					<scroll-view class="store-swiper-right" style="height:{{Endheight}};position: fixed;" scroll-y="true" >
-						<!-- <view style="height:{{Endheight}};" class="store-swiper-right-content"> -->
-							圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是圣诞节宿建德江河山大好收到就好和搭建还是
-						<!-- </view> -->
-		            </scroll-view>
+		</view> -->
+		<view tyle="top:{{Endheighttop}};" style="height: {{height}};width:{{width}};top: 100pxove;rflow:hidden;" >
+        <swiper class="store-swiper" interval="5000" duration="1000">
+            <swiper-item>
+            	<scroll-view style="height:{{height}};width:{{width}};background-color: pink" scroll-y="true">
+            	123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的
+            </scroll-view>
             </swiper-item>
-<!--             <swiper-item class="swper-slider">
-            	<scroll-view  style="width: 100%;height:{{Endheight}}" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container" >
-            	我是评价页面我是评价页面我是评价页面我是评价页面我是评价页面我是评价页面我是评价页面
-	            </scroll-view>
+            <swiper-item>
+            	123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的
             </swiper-item>
-            <swiper-item class="swper-slider">
-            	<scroll-view  style="width: 100%;height:{{Endheight}}" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container" >
-
-	            </scroll-view>
-            </swiper-item> -->
+            <swiper-item>
+            	123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的123我的你的
+            </swiper-item>
         </swiper>
+		</view>
 
 </view>
 <!-- </scroll-view> -->

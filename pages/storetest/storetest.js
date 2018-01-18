@@ -51,17 +51,20 @@ Page({
         var p2 = new Promise((resolve, reject) => {
           that.getSecondHeight(resolve);
         });
-        Promise.all([p1, p2]).then(values => {
+        // Promise.all([p1, p2]).then(values => {
             wx.getSystemInfo({
                 success: function (res) {
-                  console.log(res.windowWidth)
+                  console.log(res.windowWidth);
+                  console.log(res.windowHeight);
                   that.setData({
                     Endheight:(res.windowHeight - that.data.firstheight - that.data.secondHeight)+"px",
                     Endheighttop:(that.data.firstheight + that.data.secondHeight-3.5)+"px",
-                    windowWidth:(res.windowWidth-100)+"px"
+                    windowWidth:(res.windowWidth-100)+"px",
+                    height:(res.windowHeight-100)+"px",
+                    width:res.windowWidth+"px"
                   })
                 }
-            })
+            // })
         });
   },
   /**
@@ -74,23 +77,23 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var animation = wx.createAnimation({
-        duration: 2000,
-        timingFunction: 'ease',
+    // var animation = wx.createAnimation({
+    //     duration: 2000,
+    //     timingFunction: 'ease',
 
-    });
-    var sum=0;
-    setInterval(function() {
-        sum+=40;
-        console.log(sum)
-        animation.translateY(-sum).step();
-          this.setData({
-            order:this.data.order.concat(this.data.ordercp)
-          });
-        this.setData({
-          animationData:animation.export()
-        })
-    }.bind(this), 5000)
+    // });
+    // var sum=0;
+    // setInterval(function() {
+    //     sum+=40;
+    //     console.log(sum)
+    //     animation.translateY(-sum).step();
+    //       this.setData({
+    //         order:this.data.order.concat(this.data.ordercp)
+    //       });
+    //     this.setData({
+    //       animationData:animation.export()
+    //     })
+    // }.bind(this), 5000)
 
   },
 
@@ -144,27 +147,27 @@ Page({
     console.log(e)
   },
   getFirstHeight(resolve){
-      var query = wx.createSelectorQuery();
-      query.select('#header-store').boundingClientRect();
-      let that=this;
-      query.exec(function (res) {
-        console.log(res[0].height+"已经得到1");
-          that.setData({
-            firstheight:res[0].height
-          })
-          resolve();
-      })
+      // var query = wx.createSelectorQuery();
+      // query.select('#header-store').boundingClientRect();
+      // let that=this;
+      // query.exec(function (res) {
+      //   console.log(res[0].height+"已经得到1");
+      //     that.setData({
+      //       firstheight:res[0].height
+      //     })
+      //     resolve();
+      // })
   },
   getSecondHeight(resolve){
-      var query = wx.createSelectorQuery();
-      query.select('#headerbar').boundingClientRect();
-      let that=this;
-      query.exec(function (res) {
-        console.log(res[0].height+"已经得到2");
-          that.setData({
-            secondHeight:res[0].height
-          })
-          resolve();
-      })
+      // var query = wx.createSelectorQuery();
+      // query.select('#headerbar').boundingClientRect();
+      // let that=this;
+      // query.exec(function (res) {
+      //   console.log(res[0].height+"已经得到2");
+      //     that.setData({
+      //       secondHeight:res[0].height
+      //     })
+      //     resolve();
+      // })
   }
 })

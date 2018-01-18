@@ -1,4 +1,7 @@
 /* pages/store/store.wxss */
+page{
+	position: fixed;
+}
 .header-store{
 	display: block;
 	position: relative;
