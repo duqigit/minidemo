@@ -56,7 +56,7 @@ Page({
                 success: function (res) {
                   console.log(res.windowWidth)
                   that.setData({
-                    Endheight:(res.windowHeight - that.data.firstheight - that.data.secondHeight)+"px",
+                    Endheight:(res.windowHeight - that.data.firstheight - that.data.secondHeight-50)+"px",
                     Endheighttop:(that.data.firstheight + that.data.secondHeight-3.5)+"px",
                     windowWidth:(res.windowWidth-100)+"px"
                   })

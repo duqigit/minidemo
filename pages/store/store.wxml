@@ -30,148 +30,138 @@
 		</view>
         <swiper class="store-swiper" style="height:{{Endheight}};top:{{Endheighttop}};"  interval="5000" duration="1000">
             <swiper-item style="height:{{Endheight}};width: 100%;position: fixed;">
-	            	<view  class="scroll-view-containerA-left" style="height:{{Endheight}};">
-			            	<scroll-view  style="width:200rpx;height:{{Endheight}}" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container">
-				            		<view class="scroll-view-containerA-item scroll-view-containerA-item-on">
-				            			<view class="scroll-view-containerA-item-content">
-											<text class="iconfont icon-remen"></text>热销
-				            			</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			<text class="iconfont icon-zhekou"></text>折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            		<view class="scroll-view-containerA-item">
-				            			<view class="scroll-view-containerA-item-content">
-				    	        			折扣
-					            		</view>
-				            		</view>
-				            </scroll-view>
-	            	</view>
-					<scroll-view class="store-swiper-right" style="height:{{Endheight}};" scroll-y="true" >
-						<view style="height:{{Endheight}};" class="store-swiper-right-content">
-							<view class="store-swiper-right-titile">
-								<text class="store-swiper-right-line">|</text><text>热销</text>
-							</view>
-							<view class="shop-list-item">
-								<image src="../assets/images/shop1.jpg" class="shop-list-item-image"></image>
-								<view class="shop-list-item-right">
-									<view class="shop-list-item-name">上海咸肉菜饭套餐</view>
-									<view class="shop-list-item-describe">人气的上海咸肉菜饭，搭配四喜烤羊如穿件</view>
-									<view class="shop-list-item-fabulous">赞16</view>
-									<view><text class="shop-list-item-price">¥36</text><text class="iconfont icon-tianjia shop-list-item-number"></text></view>
-								</view>
-								<view class="clearup"></view>
-							</view>
-							<view class="shop-list-item">
-								<image src="../assets/images/shop2.jpg" class="shop-list-item-image"></image>
-								<view class="shop-list-item-right">
-									<view class="shop-list-item-name">上海咸肉菜饭套餐</view>
-									<view class="shop-list-item-describe">人气的上海咸肉菜饭，搭配四喜烤羊如穿件</view>
-									<view class="shop-list-item-fabulous">赞16</view>
-									<view><text class="shop-list-item-price">¥36</text><text class="iconfont icon-tianjia shop-list-item-number"></text></view>
-								</view>
-								<view class="clearup"></view>
-							</view>
-							<view class="shop-list-item">
-								<image src="../assets/images/shop3.jpg" class="shop-list-item-image"></image>
-								<view class="shop-list-item-right">
-									<view class="shop-list-item-name">上海咸肉菜饭套餐</view>
-									<view class="shop-list-item-describe">人气的上海咸肉菜饭，搭配四喜烤羊如穿件</view>
-									<view class="shop-list-item-fabulous">赞16</view>
-									<view><text class="shop-list-item-price">¥36</text><text class="iconfont icon-tianjia shop-list-item-number"></text></view>
-								</view>
-								<view class="clearup"></view>
-							</view>
-							<view class="shop-list-item">
-								<image src="../assets/images/shop4.jpg" class="shop-list-item-image"></image>
-								<view class="shop-list-item-right">
-									<view class="shop-list-item-name">上海咸肉菜饭套餐</view>
-									<view class="shop-list-item-describe">人气的上海咸肉菜饭，搭配四喜烤羊如穿件</view>
-									<view class="shop-list-item-fabulous">赞16</view>
-									<view><text class="shop-list-item-price">¥36</text><text class="iconfont icon-tianjia shop-list-item-number"></text></view>
-								</view>
-								<view class="clearup"></view>
-							</view>
-							<view class="shop-list-item">
-								<image src="../assets/images/shop5.jpg" class="shop-list-item-image"></image>
-								<view class="shop-list-item-right">
-									<view class="shop-list-item-name">上海咸肉菜饭套餐</view>
-									<view class="shop-list-item-describe">人气的上海咸肉菜饭，搭配四喜烤羊如穿件</view>
-									<view class="shop-list-item-fabulous">赞16</view>
-									<view><text class="shop-list-item-price">¥36</text><text class="iconfont icon-tianjia shop-list-item-number"></text></view>
-								</view>
-								<view class="clearup"></view>
-							</view>
-						</view>
+            	<view  class="scroll-view-containerA-left" style="height:{{Endheight}};">
+	            	<scroll-view  style="width:200rpx;height:{{Endheight}};" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container">
+		            		<view class="scroll-view-containerA-item scroll-view-containerA-item-on">
+		            			<view class="scroll-view-containerA-item-content">
+									<text class="iconfont icon-remen"></text>热销
+		            			</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			<text class="iconfont icon-zhekou"></text>折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣n
+			            		</view>
+		            		</view>
 		            </scroll-view>
-            </swiper-item>
-<!--             <swiper-item class="swper-slider">
-            	<scroll-view  style="width: 100%;height:{{Endheight}}" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container" >
-            	我是评价页面我是评价页面我是评价页面我是评价页面我是评价页面我是评价页面我是评价页面
+            	</view>
+				<scroll-view class="store-swiper-right" style="height:{{Endheight}};" scroll-y="true" >
+					<view style="height:{{Endheight}};" class="store-swiper-right-content">
+						<view class="store-swiper-right-titile">
+							<text class="store-swiper-right-line">|</text><text>热销</text>
+						</view>
+						<view class="shop-list-item">
+							<image src="../assets/images/shop1.jpg" class="shop-list-item-image"></image>
+							<view class="shop-list-item-right">
+								<view class="shop-list-item-name">上海咸肉菜饭套餐</view>
+								<view class="shop-list-item-describe">人气的上海咸肉菜饭，搭配四喜烤羊如穿件</view>
+								<view class="shop-list-item-fabulous">赞16</view>
+								<view><text class="shop-list-item-price">¥36</text><text class="iconfont icon-tianjia shop-list-item-number"></text></view>
+							</view>
+							<view class="clearup"></view>
+						</view>
+						<view class="shop-list-item">
+							<image src="../assets/images/shop2.jpg" class="shop-list-item-image"></image>
+							<view class="shop-list-item-right">
+								<view class="shop-list-item-name">上海咸肉菜饭套餐</view>
+								<view class="shop-list-item-describe">人气的上海咸肉菜饭，搭配四喜烤羊如穿件</view>
+								<view class="shop-list-item-fabulous">赞16</view>
+								<view><text class="shop-list-item-price">¥36</text><text class="iconfont icon-tianjia shop-list-item-number"></text></view>
+							</view>
+							<view class="clearup"></view>
+						</view>
+						<view class="shop-list-item">
+							<image src="../assets/images/shop3.jpg" class="shop-list-item-image"></image>
+							<view class="shop-list-item-right">
+								<view class="shop-list-item-name">上海咸肉菜饭套餐</view>
+								<view class="shop-list-item-describe">人气的上海咸肉菜饭，搭配四喜烤羊如穿件</view>
+								<view class="shop-list-item-fabulous">赞16</view>
+								<view><text class="shop-list-item-price">¥36</text><text class="iconfont icon-tianjia shop-list-item-number"></text></view>
+							</view>
+							<view class="clearup"></view>
+						</view>
+						<view class="shop-list-item">
+							<image src="../assets/images/shop4.jpg" class="shop-list-item-image"></image>
+							<view class="shop-list-item-right">
+								<view class="shop-list-item-name">上海咸肉菜饭套餐</view>
+								<view class="shop-list-item-describe">人气的上海咸肉菜饭，搭配四喜烤羊如穿件</view>
+								<view class="shop-list-item-fabulous">赞16</view>
+								<view><text class="shop-list-item-price">¥36</text><text class="iconfont icon-tianjia shop-list-item-number"></text></view>
+							</view>
+							<view class="clearup"></view>
+						</view>
+						<view class="shop-list-item">
+							<image src="../assets/images/shop5.jpg" class="shop-list-item-image"></image>
+							<view class="shop-list-item-right">
+								<view class="shop-list-item-name">上海咸肉菜饭套餐</view>
+								<view class="shop-list-item-describe">人气的上海咸肉菜饭，搭配四喜烤羊如穿件</view>
+								<view class="shop-list-item-fabulous">赞16</view>
+								<view><text class="shop-list-item-price">¥36</text><text class="iconfont icon-tianjia shop-list-item-number"></text></view>
+							</view>
+							<view class="clearup"></view>
+						</view>
+					</view>
 	            </scroll-view>
             </swiper-item>
-            <swiper-item class="swper-slider">
-            	<scroll-view  style="width: 100%;height:{{Endheight}}" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container" >
-
-	            </scroll-view>
-            </swiper-item> -->
         </swiper>
         <view class="mycart-bottom">
         	<view class="mycart-bottom-price mycart-bottom-left">
