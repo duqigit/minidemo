@@ -13,7 +13,7 @@
 				</view>
 				<view class="store-influence">
 					<view class="store-influence-icon-left" animation="{{animationData}}">
-						<text class="store-influence-item-left" wx:for="{{order}}" wx:for-item="j">
+						<text class="store-influence-item-left" wx:for="{{order}}" wx:key="j" wx:for-item="j">
 							<text class="store-influence-A">{{j.title}}</text>{{j.describe}}
 						</text>
 					</view>
@@ -22,14 +22,14 @@
 					<view class="clearup"></view>
 				</view>
 			</view>
-			<view class="headerbar" id="headerbar">
-				<view class="headerbar-item on">点菜</view>
-				<view class="headerbar-item">评价</view>
-				<view class="headerbar-item">商家</view>
+			<view class="headerbar" id="headerbar" >
+				<view class="headerbar-item" bindtap="tabtap" data-index="0"><text class="{{index==0?'header-item-line-on':''}}">点菜</text></view>
+				<view class="headerbar-item" bindtap="tabtap" data-index="1"><text class="{{index==1?'header-item-line-on':''}}">评价</text></view>
+				<view class="headerbar-item" bindtap="tabtap" data-index="2"><text class="{{index==2?'header-item-line-on':''}}">商家</text></view>
 			</view>
 		</view>
-        <swiper class="store-swiper" style="height:{{Endheight}};top:{{Endheighttop}};"  interval="5000" duration="1000">
-            <swiper-item style="height:{{Endheight}};width: 100%;position: fixed;">
+        <swiper class="store-swiper" style="height:{{heightnumber}};top:{{Endheighttop}};" bindchange="listenSwiper" interval="5000" duration="500" current="{{index}}">
+<!--             <swiper-item style="height:{{heightnumber}};width: 100%;position: fixed;">
             	<view  class="scroll-view-containerA-left" style="height:{{Endheight}};">
 	            	<scroll-view  style="width:200rpx;height:{{Endheight}};" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container">
 		            		<view class="scroll-view-containerA-item scroll-view-containerA-item-on">
@@ -161,21 +161,97 @@
 						</view>
 					</view>
 	            </scroll-view>
+		        <view class="mycart-bottom">
+		        	<view class="mycart-bottom-price mycart-bottom-left">
+		        		<view class="mycart-bgground"></view>
+		        		另需配送费5元
+		        	</view>
+		        	<view class="mycart-bottom-price mycart-bottom-right">
+		        		<text>¥88</text>
+		        		<text>另需配送费</text>
+		        		30元起送
+		        	</view>
+		        	<view></view>
+		        </view>
+            </swiper-item> -->
+            <swiper-item>
+				<view  class="scroll-view-containerA-left" style="height:{{Endheight}};">
+	            	<scroll-view  style="width:200rpx;height:{{Endheight}};" class="scroll-view-container" scroll-y="true" scroll-top="20" id="scroll-view-container">
+		            		<view class="scroll-view-containerA-item scroll-view-containerA-item-on">
+		            			<view class="scroll-view-containerA-item-content">
+									<text class="iconfont icon-remen"></text>热销
+		            			</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			<text class="iconfont icon-zhekou"></text>折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣
+			            		</view>
+		            		</view>
+		            		<view class="scroll-view-containerA-item">
+		            			<view class="scroll-view-containerA-item-content">
+		    	        			折扣n
+			            		</view>
+		            		</view>
+		            </scroll-view>
+            	</view>
+            </swiper-item>
+            <swiper-item>
+            	我是商家介绍页面
             </swiper-item>
         </swiper>
-        <view class="mycart-bottom">
-        	<view class="mycart-bottom-price mycart-bottom-left">
-        		<view class="mycart-bgground"></view>
-        		另需配送费5元
-        	</view>
-        	<view class="mycart-bottom-price mycart-bottom-right">
-        		<!-- <text>¥88</text> -->
-        		<!-- <text>另需配送费</text> -->
-        		30元起送
-        	</view>
-        	<view></view>
-        </view>
-</view>
-<!-- </scroll-view> -->
-<!-- <view class="container" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
 </view>

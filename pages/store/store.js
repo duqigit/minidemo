@@ -12,6 +12,8 @@ Page({
      secondHeight:'',
      Endheighttop:'',
      windowWidth:'',
+     index:0,
+     heightnumber:'',
      order:[
       {
         title:"减",
@@ -58,7 +60,8 @@ Page({
                   that.setData({
                     Endheight:(res.windowHeight - that.data.firstheight - that.data.secondHeight-50)+"px",
                     Endheighttop:(that.data.firstheight + that.data.secondHeight-3.5)+"px",
-                    windowWidth:(res.windowWidth-100)+"px"
+                    windowWidth:(res.windowWidth-100)+"px",
+                    heightnumber:(res.windowHeight - that.data.firstheight - that.data.secondHeight+3.5)+"px"
                   })
                 }
             })
@@ -166,5 +169,16 @@ Page({
           })
           resolve();
       })
-  }
+  },
+  // listenSwiper(e){
+  //     console.log(e.detail.current)
+  //     this.setData({
+  //         index:e.detail.current
+  //     })
+  // },
+  // tabtap(e){
+  //   this.setData({
+  //       index:e.currentTarget.dataset.index
+  //   })
+  // }
 })
